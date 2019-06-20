@@ -10,4 +10,3 @@ ReactDOM.hydrate(
   </Router>, 
   document.getElementById('app')
 );
-
