@@ -1,7 +1,7 @@
 {
-  "name": "ui_library",
+  "name": "TidySpaceServices",
   "version": "1.0.0",
-  "description": "A library of reusable user interface components.",
+  "description": "Codebase for the TidySpaceServices.com website.",
   "main": "src/client/main.js",
   "scripts": {
     "watch": "NODE_ENV=development webpack --watch --config webpack.config.js",
@@ -14,25 +14,16 @@
     "url": "git+https://github.com/moczka/ui_library.git"
   },
   "keywords": [
-    "ui",
-    "components",
-    "react",
-    "reusable",
-    "user",
-    "interface",
-    "pattern",
-    "library",
-    "sass",
-    "co-located",
-    "styles",
-    "css"
+    "website",
+    "cleaning",
+    "services"
   ],
   "author": "Javier S. Guerrero",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/moczka/ui_library/issues"
+    "url": "https://github.com/moczka/tidyspace-website/issues"
   },
-  "homepage": "https://github.com/moczka/ui_library#readme",
+  "homepage": "https://github.com/moczka/tidyspace-website#readme",
   "devDependencies": {
     "autoprefixer": "^8.2.0",
     "babel-core": "^6.26.0",
