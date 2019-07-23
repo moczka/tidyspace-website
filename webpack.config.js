@@ -18,7 +18,7 @@ const browserConfig = {
     output: {
         filename: 'bundle.js',
         /* Sets the output point directory (All of our build files go into it) */
-        path: path.resolve(__dirname, 'dist/client')
+        path: path.resolve(__dirname, 'public')
     },
     devtool: isDevelopment && "source-map",
     resolve: {
@@ -100,7 +100,7 @@ const browserConfig = {
     /* Runs development server */
     devServer: {
         open: true,
-        contentBase: path.join(__dirname, "dist/client"),
+        contentBase: path.join(__dirname, "public"),
         compress: true,
         port: 8080
     }
