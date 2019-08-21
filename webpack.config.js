@@ -7,7 +7,22 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const autoPrefixer = require('autoprefixer');
 
 const isDevelopment = process.env.NODE_ENV === 'development';
-
+const puglins = [
+    /* Combines all the sass files being imported into one. */
+    new ExtractTextPlugin('styles/main.css'),
+    /* Copies all the files in source directory assets to production */
+    new CopyWebpackPlugin([
+      {
+        from: 'assets', to: 'assets'
+      },
+      {
+        from: 'index.html', to: 'index.html'
+      }
+    ])
+];
+if (!isDevelopment) {
+    puglins.push(new UglifyJSPlugin());
+}
 // @TODO: Make webpack configuration file DRY by separating out set up.
 
 const browserConfig = {
@@ -84,19 +99,7 @@ const browserConfig = {
             }
         ]
     },
-    plugins: [
-        /* Combines all the sass files being imported into one. */
-        new ExtractTextPlugin('styles/main.css'),
-        /* Copies all the files in source directory assets to production */
-        new CopyWebpackPlugin([
-          {
-            from: 'assets', to: 'assets'
-          },
-          {
-            from: 'index.html', to: 'index.html'
-          }
-        ])
-    ],
+    plugins: puglins,
     /* Runs development server */
     devServer: {
         open: true,
