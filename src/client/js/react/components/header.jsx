@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './navHeader.scss';
+import './header.scss';
 import data from '_data/rawData';
 
 const NavigationHeader = props => {

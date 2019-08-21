@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Image from '_library/Image/Image';
-import NavigationHeader from '_components/navHeader';
-import NavigationFooter from '_components/navFooter';
+import Header from '_components/header';
+import Footer from '_components/footer';
 import data from '_data/rawData';
 import './HomePage.scss';
 
 const HomePage = props => {
   return (
     <div className="">
-      <NavigationHeader />
+      <Header />
       <main>
         Main content goes here
       </main>
-      <NavigationFooter />
+      <Footer />
     </div>
   );
 };

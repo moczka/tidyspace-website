@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import data from '_data/rawData';
-import './navFooter.scss';
+import './footer.scss';
 
 const date = new Date();
 

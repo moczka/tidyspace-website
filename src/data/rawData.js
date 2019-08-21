@@ -14,6 +14,22 @@ const state = {
       url: '#faq'
     }
   ],
-  valuePropositions: []
+  valuePropositions: [
+    {
+      title: 'First Value Prop',
+      description: 'a short but very descriptive summary on why this value proposition is important.',
+      keyPoints: []
+    },
+    {
+      title: 'Second Value Prop',
+      description: 'a short but very descriptive summary on why this value proposition is important.',
+      keyPoints: []
+    },
+    {
+      title: 'Third Value Prop',
+      description: 'a short but very descriptive summary on why this value proposition is important.',
+      keyPoints: []
+    }
+  ]
 };
 export default state;
