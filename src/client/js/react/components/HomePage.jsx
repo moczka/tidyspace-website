@@ -1,20 +1,20 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import Image from '_library/Image/Image';
 import Header from '_components/header';
 import Footer from '_components/footer';
 import data from '_data/rawData';
-import './HomePage.scss';
+import './homePage.scss';
 
 const HomePage = props => {
   return (
-    <div className="">
+    <Fragment>
       <Header />
       <main>
         Main content goes here
       </main>
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 

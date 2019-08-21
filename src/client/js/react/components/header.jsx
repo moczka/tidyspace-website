@@ -5,7 +5,7 @@ import data from '_data/rawData';
 
 const NavigationHeader = props => {
   return (
-    <section>
+    <header>
       <h1>
         {data.companyName}
       </h1>
@@ -18,7 +18,7 @@ const NavigationHeader = props => {
           }
         </ol>
       </nav>
-    </section>
+    </header>
   );
 };
 
