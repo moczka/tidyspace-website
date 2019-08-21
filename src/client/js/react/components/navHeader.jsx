@@ -6,12 +6,16 @@ import data from '_data/rawData';
 const NavigationHeader = props => {
   return (
     <section>
-      <h1>Cleanest Home</h1>
+      <h1>
+        {data.companyName}
+      </h1>
       <nav>
         <ol>
-          <li>Home</li>
-          <li>Contact Us</li>
-          <li>FAQ</li>
+          {
+            data.pages.map((page) => (
+              <a key={page.url} href={page.url}>{page.name}</a>
+            ))
+          }
         </ol>
       </nav>
     </section>

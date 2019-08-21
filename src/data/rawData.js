@@ -1,44 +1,19 @@
 const state = {
-  images: [
+  companyName: 'Tidy Home Cleaning Services',
+  pages: [
     {
-      name: "Kitty 1",
-      id: 123,
-      width: 200,
-      height: 200,
-      src: "https://placekitten.com/g/200/200"
+      name: 'Home',
+      url: '#home'
     },
     {
-      name: "Kitty 2",
-      id: 124,
-      width: 200,
-      height: 200,
-      src: "https://placekitten.com/g/201/201"
+      name: 'Contact Us',
+      url: '#contact'
     },
     {
-      name: "Kitty 3",
-      id: 125,
-      width: 200,
-      height: 200,
-      src: "https://placekitten.com/g/202/202"
-    },
-    {
-      name: "Kitty 4",
-      id: 126,
-      width: 200,
-      height: 200,
-      src: "https://placekitten.com/g/203/203"
+      name: 'FAQ',
+      url: '#faq'
     }
-  ]
-  /*
-  images: [
-    {
-      name: "Kitty 1",
-      id: 123,
-      width: 200,
-      height: 200,
-      src: "https://placekitten.com/g/200/200"
-    }
-  ]
-  */
+  ],
+  valuePropositions: []
 };
 export default state;
