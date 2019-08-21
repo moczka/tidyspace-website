@@ -1,4 +1,4 @@
-import HomePage from '_components/HomePage';
+import HomePage from '_components/homePage';
 
 const routes = [
   {

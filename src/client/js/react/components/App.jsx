@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import routes from '_routes/appRoutes';
-import './App.scss';
+import './app.scss';
 
 const App = () => (
   <Switch>
